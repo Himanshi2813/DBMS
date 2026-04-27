@@ -1,4 +1,5 @@
 # CREATE DATABASE
+~~~sql
 CREATE DATABASE company2cse1G2;
 USE company2cse1G2;
 
