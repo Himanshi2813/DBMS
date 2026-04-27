@@ -55,12 +55,12 @@ VALUES
 
 SELECT * FROM EMPLOYEE;
 ~~~
-~~~sql
+```sql
 ### 1. Create Employee_master table with data using Employee table.
 CREATE TABLE MASTER_EMPLOYEE SELECT * FROM EMPLOYEE; 
 SELECT * FROM MASTER_EMPLOYEE;
 DESC MASTER_EMPLOYEE;
-~~~
+```
 ~~~sql
 ### 2. Delete all record into Employee_master whose DeptNo is 10
 DELETE FROM MASTER_EMPLOYEE WHERE DEPTNO = 10;
