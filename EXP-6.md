@@ -5,8 +5,8 @@ SELECT * FROM DEPARTMENT;
 SELECT * FROM EMPLOYEE;
 ~~~
 
-#EXP 6 
-###1 Display empno, ename, deptno from employee table. Instead of display department numbers display the related department name (Use decode function).
+# EXP 6 
+### 1 Display empno, ename, deptno from employee table. Instead of display department numbers display the related department name (Use decode function).
 ~~~sql
 SELECT EMPNO, ENAME, 
 CASE DEPTNO
@@ -17,7 +17,7 @@ CASE DEPTNO
 END AS DNAME
 FROM EMPLOYEE;    
 ~~~    
-###2. Display your age in days. (INPUT YOUR AGE ONLY)
+### 2. Display your age in days. (INPUT YOUR AGE ONLY)
 ~~~sql
 SELECT DATEDIFF(CURDATE(), '2001-07-05') AS AGE_IN_DAYS;
 ~~~
@@ -25,7 +25,7 @@ SELECT DATEDIFF(CURDATE(), '2001-07-05') AS AGE_IN_DAYS;
 ~~~sql
 SELECT TIMESTAMPDIFF(MONTH, '2001-07-05', CURDATE()) AS AGE_IN_MONTHS;
 ~~~
-###4. Display the current date as 15th August Friday Nineteen Ninety-Seven.
+### 4. Display the current date as 15th August Friday Nineteen Ninety-Seven.
 ~~~sql
 SELECT DATE_FORMAT(CURDATE(), '%D, %M, %W, %Y') AS TODAYS_DATE;
 ~~~
