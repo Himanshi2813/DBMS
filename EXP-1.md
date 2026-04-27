@@ -1,4 +1,4 @@
-### CREATE DATABASE
+# CREATE DATABASE
 ~~~sql
 CREATE DATABASE company2cse1G2;
 USE company2cse1G2;
@@ -55,29 +55,32 @@ VALUES
 
 SELECT * FROM EMPLOYEE;
 ~~~
-```sql
+
 ### 1. Create Employee_master table with data using Employee table.
+~~~sql
 CREATE TABLE MASTER_EMPLOYEE SELECT * FROM EMPLOYEE; 
 SELECT * FROM MASTER_EMPLOYEE;
 DESC MASTER_EMPLOYEE;
-```
-~~~sql
+~~~
 ### 2. Delete all record into Employee_master whose DeptNo is 10
+~~~sql
 DELETE FROM MASTER_EMPLOYEE WHERE DEPTNO = 10;
 SELECT * FROM MASTER_EMPLOYEE;
 ~~~
-~~~sql
 ### 3. Update 10% in his salary of DEPTNO 20 into Employee_Master.
+~~~sql
 UPDATE MASTER_EMPLOYEE SET SAL = SAL + SAL * 0.10 WHERE DEPTNO = 20;
 SELECT * FROM MASTER_EMPLOYEE;
 ~~~
-~~~sql
+
 ### 4. Alter SAL with size 10,2 in Employee_Master.
+~~~sql
 ALTER TABLE MASTER_EMPLOYEE MODIFY SAL DECIMAL(10, 2);
 SELECT * FROM MASTER_EMPLOYEE;
 ~~~
-~~~sql
+
 ### 5. Drop Employee_master Table.
+~~~sql
 DROP TABLE MASTER_EMPLOYEE;
 SELECT * FROM MASTER_EMPLOYEE;
 ~~~
